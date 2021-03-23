@@ -13,7 +13,7 @@
 
 
 # _**About me**_ 
-### _**Im Humam Mkhzoumi , im 27 years old and im a civil engineer who pationate about computer and programming.**_
+### _**Im Humam Mkhzoumi , im 27 years old and im a civil engineer who passionate about computer and programming.**_
 ### [my github profile](https://github.com/Mkhzoumi)
 
 ### [resources](https://www.atlassian.com/blog/inside-atlassian/growth-mindset)
