@@ -12,6 +12,7 @@
 | read02a         | [read02a link](read02a.md)            |
 | read02b         | [read02b link](read02b.md)            |
 | read03          | [read03 link](read03.md)              |
+| read04          | [read04 link](read04.md)              |
 | read02b         | [growth mindset](growth-mindset.md)   |
 
 
