@@ -1,4 +1,4 @@
-# javascript
+# **javascript**
 ## **javascript is a programming laguage which used to make the websitres more interactive and user-friendly, and there is a tool called jquery is used to make writing javascript easier.**
 ## **in order to use javascript you have to understand what a script means.**
 ## **a script is a series of instructions that computer can follow to achieve a certain goal**
