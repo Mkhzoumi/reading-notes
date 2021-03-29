@@ -16,7 +16,7 @@
 ## **css3 rgba.**
 ## **css 3 rgba allows you to specify a color with rgb value , but adds a fourth value to indicate opacity. this value is known as alpha value and its a number between 0 and 1.**
 
-## **css3 hsl colors.
+## **css3 hsl colors.**
 ## **a new way to specify the color is introduced by css3 using hue, saturation, and lightness values.**
 
 
