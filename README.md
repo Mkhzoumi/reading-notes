@@ -8,22 +8,26 @@
 
 
 
-# 102 level reading notes:                                                                                          
-| assignment            | link                               |
-| -----------           | -----------                        |
-| read01                | [read01](read01.md)                |
-| read02a               | [read02a](read02a.md)              |
-| read02b               | [read02b](read02b.md)              |
-| read03                | [read03](read03.md)                |
-| read04                | [read04](read04.md)                |
-| read05                | [read05](read05.md)                |
-| read06                | [read06](read06.md)                |
-| growth mindset        | [growth mindset](growth-mindset.md)|
+# 102 level reading notes:  
+
+
+| assignment            | link                                |
+| -----------           | -----------                         |
+| read01                | [read01](read01.md)                 |
+| read02a               | [read02a](read02a.md)               |
+| read02b               | [read02b](read02b.md)               |
+| read03                | [read03](read03.md)                 |
+| read04                | [read04](read04.md)                 |
+| read05                | [read05](read05.md)                 |
+| read06                | [read06](read06.md)                 |
+| growth mindset        | [growth mindset](growth-mindset.md) |
 
 
 
 
 # 201 level reading notes:
+
+
 | assignment            | link                                   |
 | -----------           | -----------                            |
 | read01                | [read01](201/read01.md)                |
