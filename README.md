@@ -31,6 +31,7 @@
 | assignment            | link                                   |
 | -----------           | -----------                            |
 | read01                | [read01](201/read01.md)                |
+| read02                | [read02](201/read02.md)                |
 
 
 
