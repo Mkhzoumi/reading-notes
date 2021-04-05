@@ -27,7 +27,7 @@
 | *inserted*                      | *to show content has been inserted*                        | *\<ins>*          |
 | *deleted*                       | *to show content has been deleted*                         | *\<del>*          |
 
-<hr />
+
 
 # *CSS*
 + ## *css works as if there is a box around every html element.*
@@ -50,7 +50,7 @@
 | *Adjacent Sibling Selector*    | *Matches an element that is the next sibling of another*      | *h1+p*                 |
 | *General Sibling Selector*     | *Matches an element that is a sibling of another*             | *h1~p*                 |
 
-<hr />
+
 
 # *javascript*
 ## *comments in javascript we use it to explain what the code do, there are two ways to write a comment in javascript:*
