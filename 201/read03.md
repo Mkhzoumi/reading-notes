@@ -43,5 +43,4 @@
 3. ## *update: every time the loop run the statement in curly braces , add one to the counter.*
 
 
-
-# [back](https://mkhzoumi.github.io/reading-notes/)
+# [back](../README.md)
