@@ -6,7 +6,7 @@
 * ## **allows you to specify the color of text inside an element , you can specify the color you want in three ways:**
 1. ## **rgb values : express the color in terms of how much re, gree, and blue are used to make it up.**
 2. ## **hex codes : every color has its unique six digit code represent the amount of red, green, and blue in a color.**
-3. ## **color name : there are 14 predefined color names that are recognized by browsers.**
+3. ## **color name : there are 147 predefined color names that are recognized by browsers.**
 
 # **background color**
 * ## **CSS treats each HTML element as if it appears in a box, and the background-color property sets the color of the background for that box.**
