@@ -20,10 +20,10 @@
  ## *global variables use more memory than local variables because The browser has to remember them for as long as the web page using them is loaded. Local variables are only membered during the period of time that a function is being executed.*
 
  # *pair programming*
-## *pair programming: the practice of two developers sharing a single workstation to interactively tackle a coding task together.*
-## *pair programming involves two roles:*
-1. ## *the driver: the programmer who is typing the code.*
-2. ## *the navigator: uses their words to guide the Driver.*
+ ## *pair programming: the practice of two developers sharing a single workstation to interactively tackle a coding task together.*
+ ## *pair programming involves two roles:*
+ 1. ## *the driver: the programmer who is typing the code.*
+ 2. ## *the navigator: uses their words to guide the Driver.*
 
 
 
