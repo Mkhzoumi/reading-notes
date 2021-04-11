@@ -4,6 +4,7 @@
 + ## *inside the table element use \<tr>  \</tr> to indicate the start of each row of the table.*
 + ## *inside each row element use \<td>any data\</td>.*
 + ## *to add a header use \<th>\</th>*
+
 ```
 <table>
 <tr>
@@ -22,6 +23,7 @@
 # *objects*
 ## *we create objects by two ways:*
 1. ## *creating object using literal notation and adding properties and methods:*
+
 ```
 const objectName= {                                     // creating object
     property1:'anything',                               // adding properties   (variables)
@@ -40,6 +42,7 @@ objectName.methodName = function(){                    // adding methods (functi
 
 
 2. ## *creating blank object using constructor notation and adding properties and methods:*
+
 ```
 const objectName = new Object();                       // creating a blank object
 
