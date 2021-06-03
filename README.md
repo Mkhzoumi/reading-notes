@@ -3,12 +3,12 @@
 
 
 
-### _**here is the table of our reading assignment**_
+### _**here are the tables of our reading assignments**_
 
 
 
 
-# 102 level reading notes:  
+# Code 102 - Intro to Software Development reading notes:  
 
 
 | assignment            | link                                |
@@ -25,7 +25,7 @@
 
 
 
-# 201 level reading notes:
+# Code 201 - Foundations of Software Development reading notes:
 
 
 | assignment             | link                                   |
@@ -45,6 +45,16 @@
 | read13                 | [read13](201/read13.md)                |
 | read14a                | [read14a](201/read14a.md)              |
 | read14b                | [read14b](201/read14b.md)              |
+
+
+
+# Code 301 - Intermediate Software Development reading notes:
+
+| assignment             | link                                   |
+| -----------            | -----------                            |
+|                  |                 |
+
+
 
 
 
