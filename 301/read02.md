@@ -22,8 +22,4 @@
 + ## user inputs inside of a form
 
 
-
-
-
-
 # [back](../README.md)
