@@ -26,7 +26,7 @@ class ImportTest {
 }
 ```
 
-1. ## make a single class visible from the imported file.
+2. ## make a single class visible from the imported file.
 
 ```
 import javax.swing.JOptionPane;  // Make a single class visible.
@@ -39,7 +39,7 @@ class ImportTest {
 }
 ```
 
-1. ## we can use classes from another file by fully qualified class name without import.
+3. ## we can use classes from another file by fully qualified class name without import.
 
 ```
 class ImportTest {
