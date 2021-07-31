@@ -78,5 +78,8 @@
 | read03                 | [read03](401/read03.md)                |
 | read04                 | [read04](401/read04.md)                |
 | read05                 | [read05](401/read05.md)                |
+| read06                 | [read06](401/read06.md)                |
+
+
 
 
