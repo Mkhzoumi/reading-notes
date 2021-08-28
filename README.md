@@ -90,6 +90,8 @@
 | read17                 | [read17](401/read17.md)                |
 | read18                 | [read18](401/read18.md)                |
 | read19                 | [read19](401/read19.md)                |
+| read26                 | [read26](401/read26.md)                |
+
 
 
 
