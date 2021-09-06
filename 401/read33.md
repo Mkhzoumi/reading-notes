@@ -1,61 +1,94 @@
-# Serverless Architecture
+# API (GraphQL)
 
-> Focus on your application, not the infrastructure
+### relationships between types
 
-+ Serverless is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers.
-
-+ a lot of your daylight hours go into implementing, maintaining, debugging, and monitoring the infrastructure, Serverless will lift out of the way all of that infrastructure heavy, so we can focus on the business goals our applications serve.
-
-+ Pricing is based on the number of executions rather than pre-purchased compute capacity.
-
-here are some of currently available cloud services:
-
-![pic](https://cdn.hackernoon.com/hn-images/1*t4O4UXpdG68MQboNKC6bBw.jpeg)
++ The @connection directive enables you to specify relationships between @model types.
++ supports one-to-one, one-to-many, and many-to-one relationships.
++ You may implement many-to-many relationships using two one-to-many connections and a joining @model type.
 
 
-### Traditional vs. Serverless Architecture
+### Usage
 
-in the traditional the server side have to handle the logic (back and front) and the security and the Database, but in the serverless architecture the front end logic is handled on the client side and the (security , database , backend logic) are 3rd party services.
++ Relationships between types are specified by annotating fields on an @model object type with the @connection directive.
++ The fields argument can be provided and indicates which fields can be queried by to get connected objects.
++ When specifying a keyName, the fields argument should be provided to indicate which field(s) will be used to get connected objects.
 
-+ here are some of the advantages and disadvantages of serverless arch:
+#### Has one
 
-![dis](https://s7280.pcdn.co/wp-content/uploads/2018/01/key.png)
+```
+type Project @model {
+  id: ID!
+  name: String
+  team: Team @connection
+}
 
-### The Serverless App consist of:
+type Team @model {
+  id: ID!
+  name: String!
+}
+```
 
-+ Client Application — The UI of your application is rendered client side in Modern Frontend Javascript App which allows us to use a simple, static web server.
+#### Has many
 
-+ Web Server — Amazon S3 provides a robust and simple web server.
+```
+type Post @model {
+  id: ID!
+  title: String!
+  comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
+}
 
-+ Lambda functions (FaaS) — They are the key enablers in Serverless architecture. Some popular examples of FaaS are AWS Lambda, Google Cloud Functions and Microsoft Azure Functions.
+type Comment @model
+  @key(name: "byPost", fields: ["postID", "content"]) {
+  id: ID!
+  postID: ID!
+  content: String!
+}
+```
 
-+ Security Token Service (STS) — generates temporary AWS credentials (API key and secret key) for users of the application.
+#### Many-to-many connections
 
-+ User Authentication — AWS Cognito is an identity service which is integrated with AWS Lambda. With Amazon Cognito, you can easily add user sign-up and sign-in to your mobile and web apps.
+```
+type Post @model {
+  id: ID!
+  title: String!
+  editors: [PostEditor] @connection(keyName: "byPost", fields: ["id"])
+}
 
-+ Database — AWS DynamoDB provides a fully managed NoSQL database.
+# Create a join model and disable queries as you don't need them
+# and can query through Post.editors and User.posts
+type PostEditor
+  @model(queries: null)
+  @key(name: "byPost", fields: ["postID", "editorID"])
+  @key(name: "byEditor", fields: ["editorID", "postID"]) {
+  id: ID!
+  postID: ID!
+  editorID: ID!
+  post: Post! @connection(fields: ["postID"])
+  editor: User! @connection(fields: ["editorID"])
+}
 
-### AWS Amplify
+type User @model {
+  id: ID!
+  username: String!
+  posts: [PostEditor] @connection(keyName: "byEditor", fields: ["id"])
+}
+```
 
-> AWS Amplify is a set of tools and services that can be used together or on their own, to help front-end web and mobile developers build scalable full stack applications, powered by AWS. With Amplify, you can configure app backends and connect your app in minutes, deploy static web apps in a few clicks, and easily manage app content outside the AWS console.
+#### Limit
+The default number of nested objects is 100. You can override this behavior by setting the limit argument. For example:
 
-+ Amplify web frameworks including supported:
+```
+type Post @model {
+  id: ID!
+  title: String!
+  comments: [Comment] @connection(limit: 50)
+}
 
-1. JavaScript.
-2. React.
-3. Angular.
-4. Vue.
-5. Next.js
-
-+ mobile platforms supported:
-
-1. Android.
-2. iOS.
-3. React Native.
-4. Ionic.
-5. Flutter.
-
-
+type Comment @model {
+  id: ID!
+  content: String!
+}
+```
 
 
 
