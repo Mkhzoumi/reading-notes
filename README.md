@@ -105,6 +105,8 @@
 | read38                 | [read38](401/read38.md)                |
 | read41                 | [read41](401/read41.md)                |
 | read43-1               | [read43-1](401/read43-1.md)            |
+| read43-2               | [read43-2](401/read43-2.md)            |
+
 
 
 
